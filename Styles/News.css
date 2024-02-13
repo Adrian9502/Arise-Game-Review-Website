@@ -1,0 +1,48 @@
+html {
+  scroll-behavior: smooth;
+}
+.news {
+  background: linear-gradient(120deg, #050564, #7b0000);
+  border: 1px solid;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  padding-top: 80px;
+  background: linear-gradient(120deg, #050564, #7b0000);
+  height: auto;
+}
+footer h2,
+p,
+.about-us h3,
+span {
+  color: white;
+}
+.main-con {
+  /* From https://css.glass */
+  background: linear-gradient(240deg, #202091, #ab2e2e);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* responsive design */
+@media screen and (max-width: 768px) {
+  body {
+    background: linear-gradient(
+      180deg,
+      #050564,
+      #7b0000
+    ); /* Adjust the gradient for smaller screens */
+    margin: 0;
+  }
+}
+h1 {
+  font-weight: 600;
+}
+.container {
+  background-color: whitesmoke;
+}

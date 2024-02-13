@@ -1,0 +1,138 @@
+.community {
+  background: linear-gradient(120deg, #052064, #7b001d);
+  border: 1px solid;
+}
+
+.community1 {
+  color: white;
+  text-align: left;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  font-size: 75px;
+  line-height: 50px;
+  margin-top: 20px;
+  display: inline-block;
+  margin-left: 280px;
+}
+
+.community_activity {
+  color: white;
+  text-align: left;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  font-size: 25px;
+  line-height: 15px;
+  padding-left: 250px;
+  margin-left: 30px;
+}
+
+.thumbnail-1 {
+  margin-left: 280px;
+  object-fit: cover;
+  height: 200px;
+  width: 380px;
+}
+
+.profile-pic1 {
+  margin-left: 280px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: contain;
+  display: inline-block;
+}
+
+.community-review {
+  display: inline-block;
+}
+
+.user-profile-pic {
+  display: inline-block;
+  width: 50px;
+  vertical-align: top;
+}
+
+.username {
+  margin-left: 280px;
+  color: lightblue;
+}
+
+.comment {
+  margin-left: 280px;
+  color: white;
+  width: 300px;
+}
+
+.user-info {
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.comment-2 {
+  margin-left: 750px;
+  color: white;
+  width: 600px;
+}
+
+.username-2 {
+  margin-left: 750px;
+  margin-top: -10px;
+  color: lightblue;
+}
+
+.profile-pic2 {
+  margin-left: 30px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: contain;
+  display: inline-block;
+}
+
+.user-info2 {
+  display: inline-block;
+  margin-left: 30px;
+  position: relative;
+  top: -460px;
+  left: -20px;
+}
+
+.discussion-thread {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  margin: 30px;
+  max-width: 600px;
+  margin-left: 750px;
+  margin-top: -450px;
+  color: white;
+}
+
+#user-message,
+#submit-button {
+  background-color: transparent;
+  border: 1px solid #ccc;
+  padding: 5px;
+  color: white;
+}
+
+scrolling-image-container {
+  width: 380px;
+  height: 200px;
+  overflow: hidden;
+}
+
+#scrolling-image {
+  width: 380px;
+  height: auto;
+  animation: scrollImage 60s linear infinite;
+  margin-left: 280px;
+  display: block;
+}
+
+@keyframes scrollImage {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(380px);
+  }
+}

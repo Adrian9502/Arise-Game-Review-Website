@@ -1,0 +1,116 @@
+.trending {
+  background: linear-gradient(120deg, #052064, #7b001d);
+  border: 1px solid;
+}
+.outer-container-wrapper {
+  width: 1250px;
+  height: auto;
+  background: rgba(255, 255, 255, 0.074);
+  border-radius: 13px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.7px);
+  -webkit-backdrop-filter: blur(6.7px);
+  border: 1px solid rgba(255, 255, 255, 1);
+  margin: auto auto auto 290px;
+  padding: 15px;
+  margin-bottom: 100px;
+}
+.outer-container-title {
+  font-family: "Lemon Milk", Roboto;
+  font-weight: 500;
+  font-size: 45px;
+  width: 480px;
+  text-wrap: nowrap;
+  position: relative;
+  padding-bottom: 50px;
+  margin: auto;
+}
+.genre-title {
+  background: #d50404;
+  z-index: 500;
+  position: relative;
+  font-family: "Poppins", Roboto;
+  font-weight: 500;
+  font-size: 45px;
+  text-align: center;
+  width: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 60px;
+  display: inline;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+}
+.genre-container {
+  width: 98.5%;
+  background: linear-gradient(180deg, #d50404, #0b0b90);
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  position: relative;
+  top: -3px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  margin-bottom: 40px;
+  padding: 10px;
+  gap: 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 15px;
+}
+.game-container {
+  cursor: pointer;
+  height: 150px;
+}
+.game-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+  border: 1px solid white;
+}
+.game-container:hover {
+  transform: scale(1.03);
+  transition: transform 0.25s;
+}
+
+@media screen and (max-width: 768px) {
+  .outer-container-wrapper {
+    margin: auto;
+    position: relative;
+    left: 40px;
+    width: 320px;
+    margin-bottom: 50px;
+  }
+  .outer-container-title {
+    font-size: 30px;
+    margin-left: 15px;
+    font-weight: 900;
+    width: auto;
+  }
+  .genre-title {
+    width: auto;
+    height: auto;
+    padding: 10px;
+    z-index: 500;
+    position: relative;
+    font-size: 20px;
+    background: #d50404;
+  }
+  .genre-container {
+    width: auto;
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background: linear-gradient(180deg, #d50404, #0b0b90);
+  }
+  .game-container {
+    height: auto;
+  }
+  .game-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}

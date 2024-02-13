@@ -1,0 +1,21 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, Arial;
+  color: white;
+  padding-top: 80px;
+  background: linear-gradient(120deg, #050564, #7b0000);
+  overflow-x: hidden;
+  width: auto;
+  height: auto;
+}
+/* responsive design */
+@media screen and (max-width: 768px) {
+  body {
+    background: linear-gradient(180deg, #050564, #7b0000);
+    margin: 0;
+  }
+}

@@ -1,0 +1,136 @@
+.footer {
+  border-style: none;
+  height: 200px;
+  position: relative;
+  left: 260px;
+  width: 1300px;
+  display: flex;
+  padding-top: 15px;
+  background: linear-gradient(120deg, #050564, #7b0000);
+  bottom: 0;
+  margin-top: auto;
+}
+.footer-logo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 300px;
+  height: 100%;
+}
+.footer-logo img {
+  width: 50%;
+}
+.footer-logo p {
+  text-align: center;
+  font-size: 12px;
+  font-family: Roboto;
+}
+.about-us {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 600px;
+}
+.about-us h3 {
+  margin: 30px 0 0;
+  text-align: center;
+}
+.about-us p {
+  font-size: 11px;
+  text-align: center;
+  font-family: "Raleway", Roboto;
+}
+.contact {
+  width: 483px;
+  display: flex;
+}
+.contact span {
+  position: relative;
+  left: 210px;
+  top: 30px;
+  text-wrap: nowrap;
+  width: auto;
+  height: 20px;
+}
+.follow-us-icons {
+  width: 45px;
+  height: 45px;
+  margin-top: 90px;
+  margin-left: 20px;
+  position: relative;
+  left: -30px;
+}
+.follow-us-icons img {
+  width: 100%;
+}
+
+/* responsive design */
+
+@media screen and (max-width: 768px) {
+  .footer {
+    border-style: none;
+    border-top-left-radius: 5px;
+    height: 200px;
+    width: 385px;
+    left: 60px;
+    display: flex;
+    padding-top: 15px;
+    background: linear-gradient(120deg, #050564, #7b0000);
+    bottom: 0;
+    margin: auto;
+    margin-left: 40px;
+  }
+  .footer-logo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 80px;
+    height: 100%;
+  }
+  .footer-logo img {
+    width: 100%;
+    height: 50%;
+    object-fit: contain;
+  }
+  .footer-logo p {
+    font-size: 9px;
+  }
+  .about-us {
+    width: 160px;
+  }
+  .about-us h3 {
+    text-align: center;
+    margin-top: 0;
+    font-size: 13px;
+  }
+  .about-us p {
+    font-size: 9px;
+    text-align: center;
+    font-family: "Raleway", Roboto;
+  }
+  .contact {
+    width: 145px;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 30px);
+    grid-template-rows: repeat(3, 30px);
+    gap: 10px;
+  }
+  .contact span {
+    position: absolute;
+    left: 280px;
+    margin-top: 20px;
+  }
+  .follow-us-icons {
+    width: 100%;
+    position: relative;
+    left: 5px;
+    top: -20px;
+  }
+  .follow-us-icons img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+  }
+}

@@ -1,0 +1,629 @@
+.popular-reviews-container a,
+a {
+  display: block;
+  text-decoration: none;
+  color: white;
+}
+/* search - game container */
+.searchTerm {
+  font-family: "Poppins", Roboto, sans-serif;
+  font-size: 16px;
+  width: 100%;
+  border: none;
+  border-right: none;
+  padding: 5px 5px 5px 20px;
+  height: 35px;
+  border-radius: 25px 0 0 25px;
+  outline: none;
+  padding-left: 30px;
+}
+.search-container {
+  background: linear-gradient(120deg, #0022778d, #80001e90);
+  border-radius: 16px;
+  backdrop-filter: blur(5.5px);
+  -webkit-backdrop-filter: blur(5.5px);
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  width: 840px;
+  padding: 20px;
+  border-radius: 20px;
+  height: 220px;
+  margin-left: 350px;
+}
+.search-container-title {
+  font-size: 40px;
+  font-weight: 900;
+  font-family: "Lemon Milk", Roboto, sans-serif;
+}
+.search-inside-container {
+  margin-top: 20px;
+  width: 700px;
+  height: 45px;
+  position: relative;
+  left: 90px;
+  display: flex;
+}
+.search-btn {
+  width: auto;
+  border: none;
+  cursor: pointer;
+}
+.search-btn img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.navigator-container {
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 95px;
+  gap: 15px;
+  margin-left: 15px;
+}
+.navigator {
+  display: flex;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  border: none;
+  font-family: Roboto, Arial;
+  background-color: rgb(110, 9, 203);
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.navigator:hover {
+  background-color: rgb(225, 0, 255);
+  transition: background-color 0.25s;
+}
+.tooltip {
+  position: absolute;
+  background-color: gray;
+  color: white;
+  padding: 6px;
+  border-radius: 5px;
+  text-wrap: nowrap;
+  bottom: -35px;
+  opacity: 0;
+  z-index: 500;
+}
+.navigator:hover .tooltip {
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+.navigator img {
+  width: 70%;
+  height: 70%;
+  object-fit: contain;
+}
+/* games genre buttons */
+.genre-button-container {
+  width: auto;
+  height: 70px;
+  position: relative;
+  margin: 30px auto auto auto;
+  display: grid;
+  grid-template-columns: repeat(9, auto);
+  gap: 15px;
+}
+.genre-button {
+  margin: auto;
+  width: 80px;
+  height: 50px;
+  background: rgb(137, 7, 169);
+  border: none;
+  border-radius: 12px;
+  padding: 5px;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 500px;
+  color: white;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.genre-button:hover {
+  background: linear-gradient(120deg, #0a36a8, #ca0835);
+  transform: scale(1.04);
+  transition: transform 0.25s, background-color 0.25s;
+}
+.main-content-container {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  min-height: 2000px;
+  max-height: auto;
+  width: 840px;
+  padding: 20px;
+  margin-top: 80px;
+  margin-left: 350px;
+  margin-bottom: 100px;
+  background: linear-gradient(240deg, #00227769, #80001e6a);
+  border-radius: 16px;
+  backdrop-filter: blur(5.5px);
+  -webkit-backdrop-filter: blur(5.5px);
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  position: relative;
+}
+.main-container {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  margin-bottom: 25px;
+  width: auto;
+  padding: 15px;
+  border-radius: 10px;
+  border: 3px solid white;
+  height: auto;
+  max-width: 100%;
+}
+.main-container:hover,
+.reviews-container:hover {
+  background: linear-gradient(120deg, #050564, #7b0000);
+  transform: scale(1.01);
+  border-radius: 10px;
+  transition: transform 0.25s;
+}
+.game-description-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+.game-thumbnail {
+  flex: 0 0 270px;
+  width: 270px;
+  height: 160px;
+}
+.game-thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.game-title {
+  width: auto;
+  margin-top: 12px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 900;
+  letter-spacing: 1.5px;
+  font-family: "Lemon Milk", Roboto, Arial;
+}
+.game-description {
+  font-family: "Poppins", Roboto;
+  font-size: 14px;
+  margin-top: 10px;
+  margin-left: 5px;
+  letter-spacing: 0.3px;
+}
+/*Popular Reviews */
+.popular-reviews-container {
+  position: absolute;
+  display: flex;
+  left: 1260px;
+  top: 80px;
+  padding: 10px;
+  height: 550px;
+  width: 300px;
+  background: linear-gradient(130deg, #002277, #80001e);
+  border-radius: 16px;
+  backdrop-filter: blur(5.5px);
+  -webkit-backdrop-filter: blur(5.5px);
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+.popular-reviews-container2 {
+  font-size: 25px;
+  font-family: "Lemon Milk", Roboto;
+  width: 100%;
+  border: 2px solid;
+  border-radius: 16px;
+  text-align: center;
+}
+.reviews-container {
+  font-size: 14px;
+  font-family: Roboto, Arial, sans-serif;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  border: 1px white solid;
+}
+.reviews-container span {
+  font-size: 10px;
+}
+.reviews-number {
+  margin-left: 20px;
+  margin-right: 5px;
+  max-width: 30px;
+  height: 35px;
+}
+.reviews-number img {
+  max-width: 100%;
+}
+.review-comments {
+  max-width: 25px;
+  height: 40px;
+  margin-right: 20px;
+  margin-left: 10px;
+}
+.review-comments img {
+  width: 100%;
+}
+.games {
+  background: linear-gradient(120deg, #052064, #7b001d);
+  border: 1px solid;
+}
+
+/* pagination buttons*/
+.pagination-container {
+  width: 320px;
+  height: 40px;
+  padding: 9px;
+  background: rgba(255, 255, 255, 0.16);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  margin: auto;
+  position: relative;
+  top: -50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.prev,
+.next {
+  background-color: rgb(49, 49, 241);
+  border: none;
+  border-radius: 16px;
+  height: auto;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", Robot, Arial, Helvetica, sans-serif;
+  font-size: 15px;
+}
+.prev:hover,
+.next:hover {
+  background-color: rgb(0, 0, 255);
+  transform: scale(1.04);
+  transition: transform 0.25s, background-color 0.25s;
+}
+.pagination-container div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", Robot, Arial, Helvetica, sans-serif;
+}
+/* new release games */
+
+.new-release-games-main-container {
+  background: linear-gradient(130deg, #03184f, rgb(65, 6, 65));
+  border-radius: 16px;
+  backdrop-filter: blur(5.5px);
+  -webkit-backdrop-filter: blur(5.5px);
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  font-family: Poppins, sans-serif;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  width: 295px;
+  height: 1075px;
+  padding: 7px;
+  position: absolute;
+  left: 1260px;
+  top: 780px;
+}
+.new-release-games-inside-container {
+  border: 3px solid;
+  border-radius: 10px;
+  width: auto;
+  height: 100%;
+}
+.new-release-games-content-container-title {
+  font-size: 23px;
+  font-family: "Lemon Milk", Roboto, sans-serif;
+  font-weight: 500;
+  margin-top: 8px;
+}
+.new-release-games-content-container {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  gap: 15px;
+  align-items: center;
+  letter-spacing: 0.7px;
+  font-size: 13px;
+  height: 37px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+.new {
+  position: relative;
+  margin-left: 15px;
+  width: 40px;
+  height: 40px;
+}
+.new img {
+  width: 100%;
+  object-fit: contain;
+  height: 100%;
+}
+.new-release-games-content-container:hover {
+  background: linear-gradient(120deg, #620564, blueviolet);
+}
+/* trending reviews */
+.trending-reviews-container {
+  width: 295px;
+  height: auto;
+  background: linear-gradient(160deg, #031b56c7, #5c0318cf);
+  border-radius: 16px;
+  backdrop-filter: blur(5.5px);
+  -webkit-backdrop-filter: blur(5.5px);
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  position: absolute;
+  left: 1260px;
+  top: 2000px;
+  padding: 10px;
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.trending-reviews-inner-container {
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  border: 2px solid;
+}
+.trending-title {
+  font-size: 25px;
+  font-family: Lemon Milk;
+  font-weight: 500;
+}
+.trending-img {
+  width: 100%;
+  height: 150px;
+}
+.trending-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+/* js */
+.no-result {
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin-top: 50px;
+}
+.show-result {
+  font-family: "Poppins", Roboto, Arial;
+  font-size: 20px;
+  color: white;
+  position: relative;
+  bottom: 10px;
+  left: 20px;
+}
+.cant-find-description {
+  width: 500px;
+  font-family: Poppins, Arial;
+  font-size: 25px;
+  color: white;
+  text-align: center;
+  align-items: center;
+  margin: auto;
+  margin-bottom: 50px;
+}
+
+/* Animation */
+/* search container */
+.search-container {
+  -webkit-animation: slide-in-bck-top 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
+  animation: slide-in-bck-top 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation-timing-function: linear;
+}
+@-webkit-keyframes slide-in-bck-top {
+  0% {
+    -webkit-transform: translateZ(700px) translateY(-300px);
+    transform: translateZ(700px) translateY(-300px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0) translateY(0);
+    transform: translateZ(0) translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-bck-top {
+  0% {
+    -webkit-transform: translateZ(700px) translateY(-300px);
+    transform: translateZ(700px) translateY(-300px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0) translateY(0);
+    transform: translateZ(0) translateY(0);
+    opacity: 1;
+  }
+}
+/* main container */
+.main-content-container {
+  -webkit-animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
+  animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation-timing-function: linear;
+}
+@-webkit-keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+/* popular reviews , new release games , trending reviews*/
+.popular-reviews-container,
+.new-release-games-main-container,
+.trending-reviews-container {
+  -webkit-animation: slide-in-top 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-in-top 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+@-webkit-keyframes slide-in-top {
+  0% {
+    -webkit-transform: translateY(-1000px);
+    transform: translateY(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-top {
+  0% {
+    -webkit-transform: translateY(-1000px);
+    transform: translateY(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* Responsive Design */
+  .search-container {
+    margin: auto;
+    width: 300px;
+    margin-left: 125px;
+    height: auto;
+  }
+  .search-container-title {
+    font-size: 25px;
+  }
+  .navigator-container {
+    left: 10px;
+  }
+  .genre-button-container {
+    display: grid;
+    height: 150px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .navigator-container {
+    left: 263px;
+    top: 15px;
+  }
+  .genre-button-container button {
+    width: 80px;
+    height: 40px;
+    font-size: 11px;
+  }
+  .search-inside-container {
+    width: 300px;
+    position: relative;
+    left: 3px;
+  }
+  .searchTerm {
+    width: 100%;
+    font-size: 11px;
+  }
+  .main-content-container {
+    width: 330px;
+    margin: 40px auto 20px 110px;
+  }
+  .main-container {
+    margin-bottom: 20px;
+    width: auto;
+    display: grid;
+    height: auto;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 6px;
+  }
+  .game-thumbnail {
+    width: 150px;
+    height: auto;
+  }
+  .game-thumbnail img {
+    width: 100%;
+    height: 100%;
+  }
+  .game-description {
+    width: auto;
+    font-size: 12px;
+    text-align: center;
+  }
+  .game-title {
+    font-size: 14px;
+    border: 1px solid;
+    padding: 5px;
+    border-radius: 10px;
+  }
+  .trending-reviews-container {
+    width: 280px;
+    position: relative;
+    left: 145px;
+    top: -1180px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  .trending-reviews-container p {
+    font-size: 12px;
+    padding: 5px;
+  }
+  .trending-title {
+    font-size: 14px;
+  }
+  .new-release-games-main-container {
+    width: 280px;
+    position: relative;
+    left: 150px;
+    top: 440px;
+    margin-bottom: 150px;
+  }
+  .popular-reviews-container {
+    position: relative;
+    left: 135px;
+    top: 30px;
+    width: 290px;
+  }
+  /* pagination container */
+  .pagination-container {
+    width: 40%;
+    z-index: 1000;
+    position: relative;
+    top: 15px;
+    left: 50px;
+  }
+  .pagination-container button,
+  .pagination-container div {
+    font-size: 15px;
+  }
+}

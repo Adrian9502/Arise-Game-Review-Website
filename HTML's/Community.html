@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="../Styles/community.css">
+    <link rel="stylesheet" href="../Styles/sidebarFIXED.css">
+    <link rel="stylesheet" href="../Styles/footer.css">
+    <link rel="stylesheet" href="../Styles/general.css">
+    <link rel="stylesheet" href="../Styles/scrollbar.css">
+    <link rel="icon" href="../All Icons/logos/logo-wout.png" type="icon">
+    <title>Community</title>
+    
+</head>
+<body>
+    
+<!--SIDEBAR START-->
+  <nav class="sidebarFixed">
+    <img src="../All Icons/logos/logo-wout.png" class="sidebar-logo" alt=" ">
+    <div class="sidebar-title"> Arise ESports </div> <hr width="90%">
+    <!--HOME-->
+    <div class="sidebar-navigator home">
+      <a href="index.html">
+        <img src="../All Icons/sidebar-icon/1-home.png" alt="Home Icon">
+        <div>Home</div>
+      </a>
+    </div>
+
+    <!--GAMES-->
+    <div class="sidebar-navigator games">
+      <a href="Games.html">
+        <img src="../All Icons/sidebar-icon/2-games.png" alt="Games Icon">
+        <div>Games</div>
+      </a>
+    </div>
+
+     <!--TRENDING GAMES-->
+    <div class="sidebar-navigator trending">
+      <a href="TrendingGames.html">
+      <img src="../All Icons/sidebar-icon/3-trending.png" alt="Review Icon">
+      <div>Trending Games</div>
+      </a>
+    </div>
+
+    <!--EDITOR'S CHOICE-->
+    <div class="sidebar-navigator editors">
+      <a href="EditorsChoice.html">
+      <img src="../All Icons/sidebar-icon/4-top-rated.png" alt="Top Rated Icon">
+      <div>Editor's Choice</div>
+      </a>
+    </div>
+
+    <!--UPCOMING GAMES-->
+    <div class="sidebar-navigator upcoming">
+      <a href="UpcomingGames.html">
+      <img src="../All Icons/sidebar-icon/upcoming.png" alt="Latest Icon">
+      <div>Upcoming Games</div>
+      </a>
+    </div>
+
+    <!--DAILY GAMEPLAYS-->
+    <div class="sidebar-navigator dailygameplays">
+      <a href="DailyGameplays.html">
+      <img src="../All Icons/sidebar-icon/daily.png" alt="Latest Icon">
+      <div>Daily Gameplays</div>
+      </a>
+    </div>
+
+    
+    <!--TRAILERS-->
+    <div class="sidebar-navigator trailers">
+      <a href="Trailers.html">
+      <img src="../All Icons/sidebar-icon/trailers.png" alt="News Icon">
+      <div>Trailers</div>
+      </a>
+    </div>
+
+    <!--INTERVIEWS-->
+    <div class="sidebar-navigator interviews">
+      <a href="Interviews.html">
+      <img src="../All Icons/sidebar-icon/interview.png" alt="News Icon">
+      <div>Interviews</div>
+      </a>
+    </div>
+
+    <!--BEHIND THE SCENES-->
+    <div class="sidebar-navigator bts">
+      <a href="BehindTheScene.html">
+      <img src="../All Icons/sidebar-icon/bts.png" alt="News Icon">
+      <div>Behind The Scenes</div>
+      </a>
+    </div>
+
+    <!--NEWS-->
+    <div class="sidebar-navigator news">
+      <a href="News.html">
+      <img src="../All Icons/sidebar-icon/7-news.png" alt="News Icon">
+      <div>News</div>
+      </a>
+    </div>
+
+    <!--COMMUNITY-->
+    <div class="sidebar-navigator community">
+      <a href="Community.html">
+      <img src="../All Icons/sidebar-icon/8-community.png" alt="Community Icon">
+      <div>Community</div>
+      </a>
+    </div>
+  </nav>
+  <!--SIDEBAR END-->
+
+    <div>
+        <h1 class="community1">
+            Community
+        </h1>
+    </div>
+    <div>
+        <p class="community_activity">
+            Community Activity
+        </p> 
+    </div>
+    <div class="community-review"> 
+        <div class="thumbnail-row">
+        <img class="thumbnail-1" src="../photos for review/dota-2-betting.jpg">
+        </div>
+        <div class="user-profile-pic">
+            <img class="profile-pic1" src="../photos for review/userpic.jpeg">
+        </div>
+        <div class="user-info">
+        <p class="username">
+            jMparajes
+        </p>
+        <p class="comment">
+            I only just played Dota 2 and I am addicted to it!
+            One of the enduring strengths of Dota 2 lies in its vast hero roster,
+            each with unique abilities and playstyles. The constant addition of new heroes and regular
+            updates ensures that the meta stays dynamic, preventing the game from stagnating. 
+            This diversity allows for endless possibilities in team composition and strategy, 
+            making every match a fresh and exciting experience.
+        </p>
+        </div>
+    </div>   
+    <div class="user-profile-pic">
+        <img class="profile-pic2" src="../photos for review/bonto.jpg">
+    </div>
+    <div class="user-info2">
+    <p class="username-2">
+        bOntOg123
+    </p>
+    <p class="comment-2">
+        I played the New Street Fighter 6! Street Fighter 6, the latest installment in Capcom's iconic fighting game series,
+        is a triumph of evolution that pushes the boundaries of the genre to new heights.
+        Released in the midst of heightened expectations, Street Fighter 6 delivers on its
+        promises with a fresh take on the classic formula that has made the franchise 
+        a household name.
+    </p>
+    </div>
+    <div class="discussion-thread">
+      <h2>Discussion Threads</h2>
+      <p>Discuss various topics related to gaming, such as game strategies, upcoming releases, gaming hardware, etc.</p>
+      <form id="discussion-form">
+          <label for="user-message">Your Message:</label><br>
+          <textarea id="user-message" name="user-message" rows="4" cols="50"></textarea><br>
+          <button id="submit-button" type="submit">Submit</button>
+      </form>
+  </div>
+  <script>
+      document.getElementById("discussion-form").addEventListener("submit", function(event) {
+          event.preventDefault(); // Prevent the default form submission
+          
+          // Get the user's message from the form
+          var message = document.getElementById("user-message").value;
+          
+          // Display the user's message in the discussion thread
+          var discussionThread = document.querySelector(".discussion-thread");
+          var newMessage = document.createElement("p");
+          newMessage.textContent = message;
+          discussionThread.appendChild(newMessage);
+          
+          // Clear the input field after submission
+          document.getElementById("user-message").value = "";
+      });
+  </script>
+
+<!--FOOTER START-->
+<footer>
+  <div class="footer">
+      <span class="footer-logo">
+        <img src="../All Icons/logos/logo.png">
+        <p>
+          &copy; 2023 Arise Esports. All Rights Reserved.
+        </p>
+      </span>
+      <div class="about-us">
+        <h3>About Us</h3>
+        <p>
+          Arise Esports is your go-to destination for in-depth game reviews and esports coverage. 
+          Our passionate team of gamers and writers are dedicated to bringing you the latest 
+          insights, reviews, and news from the gaming world.
+        </p>
+        <p>
+          Whether you're a casual gamer or a hardcore esports enthusiast, we've got you covered. 
+          Explore our reviews, stay updated on the latest releases, and dive into the exciting 
+          world of competitive gaming with Arise Esports.
+        </p>
+      </div>
+      <div class="contact">
+          <span>Follow Us</span>
+          <div class="follow-us-icons">
+            <a href="https://www.facebook.com/profile.php?id=100082782967903">
+              <img src="../All Icons/footer-icons/facebook.png">
+            </a>
+          </div>
+          <div class="follow-us-icons">
+            <a href="https://www.instagram.com/john.adrian.bon/">
+              <img src="../All Icons/footer-icons/instagram.png">
+            </a>
+          </div>
+          <div class="follow-us-icons">
+            <a href="https://www.linkedin.com/in/john-adrian-bonto-a65704283/">
+              <img src="../All Icons/footer-icons/linkedin.png">
+            </a>
+          </div>
+          <div class="follow-us-icons">
+            <a href="https://www.tiktok.com/@johnadrianbonto">
+              <img src="../All Icons/footer-icons/tiktok.png">
+            </a>
+          </div>
+          <div class="follow-us-icons">
+            <a href="https://twitter.com/?logout=1699797095268">
+              <img src="../All Icons/footer-icons/twitter.png">
+            </a>
+          </div>
+          <div class="follow-us-icons">
+            <a href="https://www.youtube.com/channel/UCFdgaoqUkYEVJ-b0OkG5sgA">
+              <img src="../All Icons/footer-icons/youtube.png">
+            </a>
+          </div>
+      </div>
+  </div>
+</footer>
+</body>
+</html
